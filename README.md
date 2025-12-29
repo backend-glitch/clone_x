@@ -20,9 +20,14 @@
 
 
 ## ⚙️Links
- ### 1️⃣ Render
+ ### 1️⃣ Render (original)
  ```md
-Upcoming...
+https://render.com/
+```
+
+## ⚙️Render (Clone)
+```md
+https://backend-glitch.github.io/clone_x/
 ```
 ---
 
