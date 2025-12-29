@@ -31,10 +31,12 @@
   btn.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 
-     if (document.body.classList.contains("dark")) {
-        btn.textContent = "☀️"; 
-    } else {
-        btn.textContent = "🌙";  
-    }
+      (document.body.classList.contains("dark")) ?  btn.textContent = "☀️" :  btn.textContent = "🌙";
+
+
+    //     btn.textContent = "☀️"; 
+    // } else {
+    //     btn.textContent = "🌙";  
+    // }
   });
 
