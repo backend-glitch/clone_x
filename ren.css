@@ -143,11 +143,19 @@ body {
 
     
 }
-
+/* 
 .btn-1:hover{
     
     background:white;
     color:black;
+} */
+
+
+@media (hover: hover) {
+  .btn-1:hover {
+      background:white;
+    color:black;
+  }
 }
 
 .navbar-2{
@@ -349,6 +357,14 @@ body {
    transform: scaleX(0);
 
 }
+ 
+/* @media (hover: hover) {
+  .btn-3:hover {
+  
+      transform: scaleX(0);
+  }
+} */
+
 
 .btn-3::before{
 
@@ -1205,7 +1221,7 @@ h3{
 @media (max-width: 800px) {
 
   .logo {
-    width: 20rem;    
+    width: 1.8rem;    
     height: 1.3rem;
     flex: 0;           
     margin-left: 0.5rem;
