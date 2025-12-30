@@ -59,41 +59,14 @@ html, body {
 }
 
 body {
+
   background-color: var(--bg);
-  min-height: 100vh;     /* Correct way */
-  overflow-x: hidden;   /* Prevent horizontal scroll */
+  min-height: 100vh;     
+  overflow-x: hidden; 
+
 }
 
-/* Theme btn
-.toggle-btn {
 
-  position: fixed;
-
-  bottom: 1rem;
-  right: 1rem;
-
-  width: 5rem;
-  height: 5rem;
-  border-radius: 1rem;
-
-  border: none;
-  background: linear-gradient(135deg, #7f5cff, #5b2eff);
-  color: white;
-  font-size: 1.5rem;
-
-
-  cursor: pointer;
-
-  box-shadow: 0 10em 25em rgba(0,0,0,0.3);
-  z-index: 2000;
-
-  text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-} */
 
 .toggle-btn {
   position: fixed;
@@ -120,14 +93,7 @@ body {
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
-/* 
-.toggle-btn:hover{
-  
-transform: scale(1.1);
-color:rgba(135, 5, 255, 0.7);
-background: var(--text);
 
-} */
 
 @media (hover: hover) {
   .toggle-btn:hover {
@@ -212,6 +178,9 @@ background: var(--text);
 
  
 }
+
+
+
 
 .navbar-2 li{
     padding: 0.5rem 0.8rem;    
@@ -1205,5 +1174,30 @@ h3{
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+
+/* responsive sections */
+
+@media (max-width: 800px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-text-1 {
+    width: 100%;
+    margin: 1.5rem 1rem;
+  }
+
+  .boxes {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* or just display: none; if purely decorative */
+  }
+
+  .sec-1 {
+    grid-template-columns: 1fr; /* instead of repeat(1, 50em) */
   }
 }
