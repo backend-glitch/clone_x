@@ -1194,10 +1194,21 @@ h3{
   .boxes {
     width: 100%;
     max-width: 100%;
-    grid-template-columns: repeat(2, 1fr); /* or just display: none; if purely decorative */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   .sec-1 {
-    grid-template-columns: 1fr; /* instead of repeat(1, 50em) */
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .logo {
+    width: 20rem;    
+    height: 1.3rem;
+    flex: 0;           
+    margin-left: 0.5rem;
+
   }
 }
