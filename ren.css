@@ -20,10 +20,11 @@ list-style-type: none;
 
     --sec-5:rgba(197,235,255);
 
-    --sec-7:rgba(2244,240,255,1);
+    --sec-7:rgba(244,240,255,1);
 
+ 
+  --sec-9:rgba(172,255,209,1);
 }
-
 
 .dark {
   --bg: black;
@@ -35,6 +36,8 @@ list-style-type: none;
    --sec-5: rgba(0,44,111);
 
    --sec-7:rgba(28,0,55,1);
+
+      --sec-9: rgba(0,57,36,1);
 
   }
 
@@ -1737,3 +1740,162 @@ margin-left: 16rem;
 
 
 
+
+/* section - 9 */
+
+.sec-9 .boxes{
+    /* flex : 1; */
+
+     flex :1; 
+
+ 
+    display: grid;
+    grid-template-columns: repeat(15, 10rem);
+     grid-auto-rows: 15rem; 
+  
+
+
+    width : 100%;
+    height: 100%;
+
+    /* border: 1px solid black; */
+}
+
+
+
+
+    .sec-9 .box{
+
+     position: relative;
+  overflow: hidden;
+  z-index: 1;
+  
+  width:400%;
+
+  background :  var(--bg);
+
+    border: 0.01rem solid var(--text);
+    opacity: 0.5;
+    
+    transition: 10s transform ease;
+}
+
+.sec-9 .box:before{
+     /* content: ""; */
+
+      top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+
+  /* position: absolute; */
+  inset: 0;
+  background: var(--bg);
+
+  /* transform-origin: right; */
+  transition: transform 0.35s ease;
+
+
+  z-index: -1;
+}
+
+.sec-9 .box:hover::before{
+    /* transform: scaleX(0); */
+}
+
+/* motion */
+.sec-9 .box.active::before {
+  /* animation: slideIn 1.5s linear; */
+}
+
+
+
+.big-box{
+  width:80rem;
+  height:20rem;
+
+  z-index: 9995;
+
+  background-color: var(--bg);
+
+  border: 1px solid grey;
+
+  display: flex;
+ align-items: center;
+ justify-content: center;
+
+ margin-right: 40rem;
+ 
+
+ /* left : 2rem;
+ top: 2rem; */
+}
+
+.sec-9 .home-text-1{
+  font-size: 0.8rem;
+  margin-right: 10rem;
+}
+
+.box-89{
+  z-index: 9996;
+}
+
+.big-img{
+  opacity: 1;
+
+  width:25rem;
+  height: 20rem;
+
+  z-index: 9996;
+
+  margin-right: 60rem;
+}
+
+.big-box .home-text-1 h1{
+  margin-right: 20rem;
+
+  font-size: 1rem;
+
+  line-height: 3rem;
+  
+}
+
+
+.big-box .home-text-1 h3{
+  margin-right: 2rem;
+margin-top: 5rem;
+  font-size: 1rem;
+ 
+  right : 60rem;
+
+  gap:90rem;
+
+  padding-inline-start :2rem;
+
+  line-height: 2rem;
+
+  opacity: 1;
+
+  font-weight: bold;
+
+  background-color: var(--sec-9)
+}
+
+@media (max-width : 800px) {
+  
+  .sec-9 .box{
+    display: none;
+  }
+
+  .sec-9 .big-img{
+    display: none;
+  }
+
+
+  .big-box{
+    width:34rem;
+    height:45rem;
+
+    font-size:1rem;
+  }
+}
