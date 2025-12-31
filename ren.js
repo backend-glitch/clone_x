@@ -19,12 +19,12 @@
     // }, 800);
   
 
-    }, 2000);
+    }, 1000);
 
   }
 
   // run repeatedly
-  setInterval(animateRandomBox, 800);
+  setInterval(animateRandomBox, 300);
 
 
 
