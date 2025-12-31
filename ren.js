@@ -11,14 +11,20 @@
 
     box.classList.add("active");
 
-    setTimeout(() => {
+     setTimeout(() => {
       box.classList.remove("active");
-    }, 1000);
+     
+    //    setTimeout(() => {
+    //   animateRandomBox();
+    // }, 800);
+  
+
+    }, 2000);
 
   }
 
   // run repeatedly
-  setInterval(animateRandomBox, 300);
+  setInterval(animateRandomBox, 800);
 
 
 
