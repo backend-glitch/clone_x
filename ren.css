@@ -1799,14 +1799,6 @@ margin-left: 16rem;
   z-index: -1;
 }
 
-.sec-9 .box:hover::before{
-    /* transform: scaleX(0); */
-}
-
-/* motion */
-.sec-9 .box.active::before {
-  /* animation: slideIn 1.5s linear; */
-}
 
 
 
