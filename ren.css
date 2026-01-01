@@ -1404,15 +1404,28 @@ margin-left: 1.7rem;
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 550px) {
   .sec-4 {
-    grid-template-columns: repeat(1,24rem);
+    grid-template-columns: repeat(1,1fr);
     border: none;
   }
 
   .sub-4{
     border : 0px;
   }
+}
+@media (min-width: 550px) and (max-width: 1000px) {
+  /* styles apply only between 400px and 800px */
+
+    .sec-4 {
+    grid-template-columns: repeat(2,1fr);
+    border: none;
+  }
+
+  .sub-4{
+    border : 0px;
+  }
+
 }
 
 
@@ -1762,6 +1775,17 @@ margin-left: 16rem;
 
 
 /* section - 9 */
+.sec-9 .home-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;            
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
 
 .sec-9 .boxes{
     /* flex : 1; */
@@ -1837,6 +1861,10 @@ margin-left: 16rem;
  justify-content: center;
 
  margin-right: 40rem;
+
+  width: min(90%, 60rem);     /* responsive + max width */
+  height: auto;
+
  
 
  /* left : 2rem;
@@ -1896,8 +1924,21 @@ margin-top: 5rem;
 @media (max-width : 800px) {
   
   .sec-9 .home-container{
-     min-height: 120vh;
+   /* width:100%; */
+   /* background-size: cover; */
+   /* min-width:50vh; */
+   width:100%;
+     min-height: 100vh;
+
+     overflow: hidden;
   }
+  
+  .sec-9 .big-box .home-text-1{
+    width:50%;
+    
+    font-size: 1rem;
+  }
+  
 
   .sec-9 .box{
     display: none;
