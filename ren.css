@@ -1779,7 +1779,7 @@ margin-left: 16rem;
   width: 100%;
   min-height: 100vh;
 
-  display: flex;            
+  display: flex;              /* 👈 REQUIRED */
   justify-content: center;
   align-items: center;
 
@@ -1862,9 +1862,7 @@ margin-left: 16rem;
 
  margin-right: 40rem;
 
-  width: min(90%, 60rem);     /* responsive + max width */
-  height: auto;
-
+ 
  
 
  /* left : 2rem;
@@ -1932,13 +1930,12 @@ margin-top: 5rem;
 
      overflow: hidden;
   }
-  
-  .sec-9 .big-box .home-text-1{
-    width:50%;
-    
-    font-size: 1rem;
-  }
-  
+ .sec-9 .big-box .home-text-1 h1{
+  font-size: 1em;
+
+  margin-right: 2rem;
+ 
+ }
 
   .sec-9 .box{
     display: none;
