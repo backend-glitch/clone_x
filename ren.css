@@ -1895,6 +1895,10 @@ margin-top: 5rem;
 
 @media (max-width : 800px) {
   
+  .sec-9 .home-container{
+     min-height: 120vh;
+  }
+
   .sec-9 .box{
     display: none;
   }
